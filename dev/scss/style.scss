@@ -435,6 +435,10 @@ body{
 		text-align: center;
 		vertical-align: middle;
 		font-size: 15px;
+		transition: .5s;
+		&:hover{
+			transform: rotateY(360deg);
+		}
 	}
 }
 .copyright{
