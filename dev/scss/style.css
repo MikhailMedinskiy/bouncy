@@ -130,8 +130,7 @@ body {
   background-image: url(../img/top-bg.jpg);
   background-position: center top;
   background-size: cover;
-  position: relative;
-  background-attachment: fixed; }
+  position: relative; }
   .intro:after {
     background-color: rgba(32, 34, 36, 0.5);
     content: "";
@@ -316,8 +315,7 @@ body {
   position: relative;
   z-index: 1;
   padding: 53px 0;
-  color: #fff;
-  background-attachment: fixed; }
+  color: #fff; }
   .loveis:before {
     display: block;
     position: absolute;

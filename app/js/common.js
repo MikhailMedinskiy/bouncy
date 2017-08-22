@@ -31,6 +31,7 @@
     		dots: true,
     		arrows: false
     	});
+
     	$('.testimonials-slider').slick({
     		dots: true,
     		arrows: false,
@@ -39,35 +40,36 @@
     	})
 
     	$('.next-block').on("click", function(e){
-    			e.preventDefault();
-    		   $('html, body').animate({
-			        scrollTop: $( $.attr(this, 'href') ).offset().top
-			    }, 1000);
-			   })
+    		e.preventDefault();
+    		$('html, body').animate({
+			    scrollTop: $( $.attr(this, 'href') ).offset().top
+			}, 1000);
+		})
 
     });
 
 
     $(window).scroll(function() {
 
-    	 var fromTop = $(this).scrollTop()+topMenuHeight;
+    	var fromTop = $(this).scrollTop()+topMenuHeight;
    
-		   // Get id of current scroll item
-		   var cur = scrollItems.map(function(){
-		     if ($(this).offset().top < fromTop)
-		       return this;
-		   });
+		// Get id of current scroll item
+		var cur = scrollItems.map(function(){
+		    if ($(this).offset().top < fromTop)
+			    return this;
+		});
+
 		   // Get the id of the current element
-		   cur = cur[cur.length-1];
-		   var id = cur && cur.length ? cur[0].id : "";
+		cur = cur[cur.length-1];
+		var id = cur && cur.length ? cur[0].id : "";
 		   
-		   if (lastId !== id) {
-		       lastId = id;
-		       // Set/remove active class
-		       menuItems
-		         .removeClass("menu__link--active")
-		         .filter("[href='#"+id+"']").addClass("menu__link--active");
-		   }      
+		if (lastId !== id) {
+		    lastId = id;
+		    // Set/remove active class
+		    menuItems
+			   .removeClass("menu__link--active")
+		       .filter("[href='#"+id+"']").addClass("menu__link--active");
+		}      
 
 	    var scroll = $(window).scrollTop();
 
@@ -78,7 +80,8 @@
 	    } else{
 	    	$('.header').removeClass('header--light')
 	    }
-	}); //missing );
+
+	});
 
 
     // Scripts that will run after the whole page is loaded (images, videos, iframes. etc)
@@ -131,11 +134,12 @@
 
 	    var scroll = $(window).scrollTop();
 
-	    $(".intro__title").animated("fadeInDown","fadeOutUp");
-	    $(".intro__subtitle").animated("fadeInUp","fadeOutUp");
-	    $(".section .container").animated("fadeInLeft","fadeOutUp");
+		    $(".intro__title, .section__title, .loveis__title").animated("fadeInDown","fadeOutUp");
+		    $(".intro__subtitle, .section__subtitle, .btn ").animated("fadeInUp","fadeOutUp");
+		    $(".portfolio__wrapper, .slick-slider").animated("slideInUp","fadeOutUp");
 
-    });
+	   	
+	   	});
 
     // Scripts that will run on window resize
     $(window).on('resize', function () {

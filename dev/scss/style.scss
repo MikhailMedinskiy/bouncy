@@ -110,6 +110,7 @@ body{
 	background-position: center top;
 	background-size: cover;
 	position: relative;
+	background-attachment: fixed;
 	&:after{
 		background-color: $overlay-color;
 		content: "";
@@ -332,6 +333,7 @@ body{
 	z-index: 1;
 	padding: 53px 0;
 	color: #fff;
+	background-attachment: fixed;
 	&:before{
 		display: block;
 		position: absolute;
