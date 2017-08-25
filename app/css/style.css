@@ -1,5 +1,5 @@
 /*--------------------------
- reset
+ RESET
 --------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -38,11 +38,10 @@ table {
   margin: 0;
   padding: 0;
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 /*--------------------------
- Variables
+ VARIABLES
 --------------------------*/
 /*--------------------------
  GLOBAl
@@ -81,16 +80,85 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff; }
 
+.section {
+  padding: 80px 0 90px;
+  color: #333b46; }
+  .section__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    letter-spacing: 3px; }
+  .section__subtitle {
+    font-size: 14px;
+    color: #7f8ea2; }
+  .section__heading-group {
+    width: 100%;
+    max-width: 465px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 64px; }
+
+.slick-dots {
+  text-align: center;
+  margin-top: 38px; }
+  .slick-dots li {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    margin: 5px; }
+    .slick-dots li button {
+      cursor: pointer;
+      font-size: 0;
+      line-height: 0;
+      border: none;
+      height: 10px;
+      width: 10px;
+      border: 1px solid #19bd9a;
+      border-radius: 50%;
+      background-color: transparent; }
+  .slick-dots li.slick-active button {
+    background-color: #19bd9a; }
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s; }
+  .btn:hover {
+    background-color: #19bd9a;
+    border-color: #19bd9a; }
+
+.responsive-img {
+  width: 100%;
+  display: inline-block; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.logo-svg {
+  fill: #fff;
+  fill-rule: evenodd; }
+  .logo-svg--dark {
+    fill: #000; }
+
+.map__wrapper {
+  height: 440px; }
+
 /*--------------------------
- CUSTOM CODE GOES HERE
+ HEADER
 --------------------------*/
-/* HEADER */
 .header {
   width: 100%;
   position: fixed;
   z-index: 3;
   padding: 40px 0 20px 0;
-  -webkit-transition: 0.3s;
   transition: 0.3s; }
   .header--light {
     background-color: #000;
@@ -107,7 +175,6 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 27px;
     display: inline-block; }
@@ -145,8 +212,7 @@ body {
     z-index: 2;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     max-width: 630px;
     color: #fff;
@@ -154,7 +220,9 @@ body {
   .intro__title {
     font-family: "Source Sans Pro";
     font-size: 36px;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
   .intro__down {
     position: absolute;
     left: 0;
@@ -172,31 +240,57 @@ body {
     text-align: center;
     border-radius: 50%;
     font-weight: 300;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer; }
     .intro__down:hover {
       background-color: #19bd9a; }
 
-.section {
-  padding: 80px 0 90px;
-  color: #333b46; }
-  .section__title {
-    font-size: 20px;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-    letter-spacing: 3px; }
-  .section__subtitle {
-    font-size: 14px;
-    color: #7f8ea2; }
-  .section__heading-group {
-    width: 100%;
-    max-width: 465px;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    padding-bottom: 64px; }
+/*--------------------------
+ SOCIAL
+--------------------------*/
+/*Social*/
+.social-list__item {
+  display: inline-block;
+  margin: 5px; }
+.social-list__link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  width: 26px;
+  line-height: 26px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  transition: .5s; }
+  .social-list__link:hover {
+    transform: rotateY(360deg); }
 
+.copyright {
+  margin-bottom: 25px; }
+
+.facebook {
+  background-color: #3B5998; }
+
+.twitter {
+  background-color: #26A6D1; }
+
+.linkedin {
+  background-color: #0E76A8; }
+  .linkedin--alighn {
+    position: relative;
+    top: -1px;
+    left: 1px; }
+
+.instagram {
+  background-color: #3F729B; }
+
+.vimeo {
+  background-color: #86C9EF; }
+
+/*--------------------------
+ FILTER SECTION
+--------------------------*/
 .filter {
   text-align: center;
   padding-bottom: 45px; }
@@ -221,6 +315,9 @@ body {
       height: 2px;
       background-color: #19bd9a; }
 
+/*--------------------------
+ PORTFOLIO SECTION
+--------------------------*/
 .portfolio {
   width: 100%;
   background-color: #F3F3F3; }
@@ -238,15 +335,11 @@ body {
   .portfolio__img {
     width: 100%; }
 
+/*--------------------------
+ TEAM SECTION
+--------------------------*/
 .team {
   background-color: #fff; }
-
-.responsive-img {
-  width: 100%;
-  display: inline-block; }
-
-.text-right {
-  text-align: right; }
 
 .team-slider__photo {
   display: inline-block;
@@ -287,27 +380,9 @@ body {
   max-width: 400px;
   display: inline-block; }
 
-.slick-dots {
-  text-align: center;
-  margin-top: 38px; }
-  .slick-dots li {
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
-    margin: 5px; }
-    .slick-dots li button {
-      cursor: pointer;
-      font-size: 0;
-      line-height: 0;
-      border: none;
-      height: 10px;
-      width: 10px;
-      border: 1px solid #19bd9a;
-      border-radius: 50%;
-      background-color: transparent; }
-  .slick-dots li.slick-active button {
-    background-color: #19bd9a; }
-
+/*--------------------------
+ LOVEIS SECTION
+--------------------------*/
 .loveis {
   width: 100%;
   background-image: url(../img/loveisbg.jpg);
@@ -334,22 +409,9 @@ body {
     font-size: 20px;
     padding-bottom: 25px; }
 
-.btn {
-  display: inline-block;
-  color: #fff;
-  padding: 10px 25px;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .btn:hover {
-    background-color: #19bd9a;
-    border-color: #19bd9a; }
-
-.text-center {
-  text-align: center; }
-
+/*--------------------------
+ TESTIMONIALS SECTION
+--------------------------*/
 .testimonials {
   background-color: #F3F3F3; }
   .testimonials__photo {
@@ -370,65 +432,20 @@ body {
   background-color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
-  -webkit-box-shadow: 1px 1px 1px 0px #E7E7E6;
-          box-shadow: 1px 1px 1px 0px #E7E7E6; }
+  box-shadow: 1px 1px 1px 0px #E7E7E6; }
 
-.map__wrapper {
-  height: 440px; }
-
-.logo-svg {
-  fill: #fff;
-  fill-rule: evenodd; }
-  .logo-svg--dark {
-    fill: #000; }
-
+/*--------------------------
+ FOOTER SECTION
+--------------------------*/
 .footer {
   text-align: center;
   padding-bottom: 90px; }
   .footer__logo {
     margin-bottom: 10px; }
 
-.social-list__item {
-  display: inline-block;
-  margin: 5px; }
-.social-list__link {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  width: 26px;
-  line-height: 26px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 15px;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  .social-list__link:hover {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg); }
-
-.copyright {
-  margin-bottom: 25px; }
-
-.facebook {
-  background-color: #3B5998; }
-
-.twitter {
-  background-color: #26A6D1; }
-
-.linkedin {
-  background-color: #0E76A8; }
-  .linkedin--alighn {
-    position: relative;
-    top: -1px;
-    left: 1px; }
-
-.instagram {
-  background-color: #3F729B; }
-
-.vimeo {
-  background-color: #86C9EF; }
-
+/*--------------------------
+ MEDIA SECTION
+--------------------------*/
 @media only screen and (max-width: 768px) {
   .header, .menu {
     text-align: center; }
@@ -460,3 +477,5 @@ body {
     font-size: 25px; }
   .intro__subtitle {
     font-size: 14px; } }
+
+/*# sourceMappingURL=style.css.map */

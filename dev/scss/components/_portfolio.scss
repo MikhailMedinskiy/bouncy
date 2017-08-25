@@ -1,0 +1,22 @@
+.portfolio{
+	width: 100%;
+	background-color: #F3F3F3;
+	&__wrapper{
+		padding: 10px;
+		margin: 0 auto;
+	}
+	&__item{
+		margin: 5px;
+		width: 23%;
+		max-width: 270px
+	}
+	&__link{
+		display: block;
+		img{
+			display: block;
+		}
+	}
+	&__img{
+		width: 100%;
+	}
+}

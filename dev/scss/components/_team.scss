@@ -1,0 +1,52 @@
+.team{
+	background-color: #fff;
+}
+
+.team-slider{
+	&__photo{
+		display: inline-block;
+		width: 100%;
+		max-width: 285px;
+		height: auto;
+
+	}
+	&__heading-group{
+		position: relative;
+		display: block;
+		margin-bottom: 25px;
+		margin-top: 25px;
+		&:after{
+			display: block;
+			content: "";
+			width: 4px;
+			height: 100%;
+			background-color: $accent-color;
+			position: absolute;
+			top: 0;
+			right: -55px;
+		}
+	}
+	&__info{
+		text-align: right;
+	}
+	&__title{
+		color: #464646;
+		font-size: 20px;
+		line-height: 1;
+		padding-bottom: 10px;
+	}
+	&__sub-title{
+		font-family: "Source Sans Pro";
+		font-size: 14px;
+		color: #81868e;
+		font-style: italic;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+	&__text{
+		color: #81868e;
+		font-size: 14px;
+		max-width: 400px;
+		display: inline-block;
+	}
+}

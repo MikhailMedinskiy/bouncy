@@ -1,0 +1,47 @@
+/*Social*/
+
+.social-list{
+	&__item{
+		display: inline-block;
+		margin: 5px;
+	}
+	&__link{
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		width: 26px;
+		line-height: 26px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 15px;
+		transition: .5s;
+		&:hover{
+			transform: rotateY(360deg);
+		}
+	}
+}
+
+.copyright{
+	margin-bottom: 25px;
+}
+.facebook{
+	background-color: #3B5998;
+}
+.twitter{
+	background-color: #26A6D1;	
+}
+.linkedin{
+	background-color: #0E76A8;
+	&--alighn{
+		position: relative;
+		top: -1px;
+		left: 1px;
+	}
+}
+.instagram{
+	background-color: #3F729B;
+}
+.vimeo{
+	background-color: #86C9EF;
+}

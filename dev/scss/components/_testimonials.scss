@@ -1,0 +1,27 @@
+.testimonials{
+	background-color: #F3F3F3;
+	&__photo{
+		display: inline-block;
+		border-radius: 50%;
+	}
+	&__message{
+		max-width: 770px;
+		padding-bottom: 30px;
+	}
+	&__author{
+		color: #19bd9a;
+		font-weight: bold;
+	}
+	&__form{
+		color: #464646;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.testimonials-slider{
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	box-shadow: 1px 1px 1px 0px #E7E7E6;
+}
